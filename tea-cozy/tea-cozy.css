@@ -37,6 +37,7 @@ header {
   list-style: none;
   color: white;
   display: inline-flex;
+  flex-wrap: wrap;
   float: right;
   margin: 10px
 }
@@ -97,13 +98,6 @@ main {
 #location {
   text-align: center;
   padding-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  flex-wrap: wrap;
-  background: url('img-locations-background.jpeg') center no-repeat;
-  overflow-y: scroll;
 }
 
 .location-boxes {
