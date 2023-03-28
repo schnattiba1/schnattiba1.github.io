@@ -380,6 +380,10 @@ footer h4 {
   .wrapper #idx {
     margin-top: -125px;
   }
+  .wrapper #idx a {
+    font-size: 14px;
+  } 
+    
   footer h4 {
     font-family: 'Delicious Handrawn', cursive;
     font-size: 15px;
