@@ -79,19 +79,13 @@ body {
     border-top: 1px solid white;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
 
 main h1 {
     font-family: 'Press Start 2P', cursive;
@@ -103,6 +97,10 @@ main h2 {
     letter-spacing: 0.1em;
 }
 
+main img {
+    padding-top: 90px;
+    height: 500px;
+}
 .background-container {
     background-color: #454545;
 }
@@ -196,9 +194,6 @@ label {
       #link-container::before {
         border-top: none;
     }
-    main h1 {
-        padding-top: 50px
-    }
     main h2 {
        font-size: 24px;
        letter-spacing: 1px;
@@ -208,19 +203,6 @@ label {
         height: auto;
         width: 100%;
     }
-     nav {
-    display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-    }
-    nav.row li {
-  align-items: space-evely
-}
-    main img {
-        padding-top: 55px;
-        height: 330px
-    }
 }
 
 @media only screen and (max-width: 399px) {
@@ -228,7 +210,6 @@ label {
         border-top: none;
     }
 }
-
 
 
 /*@media only screen and (min-device-width: 2000px) and (orientation: landscape) {
