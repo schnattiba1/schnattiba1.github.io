@@ -52,4 +52,50 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://schnattiba1.github.io/tea-cozy/tea-cozy.html', '_blank');
     navbarLinks.classList.remove('active');
   });
+  
+  // submit form
+  
+  const form = document.getElementById('myForm');
+
+  form.addEventListener("submit", function(event) => {
+    
+    event.preventDefault();
+
+    const Firstname = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const companyName = document.getElementById('company-name').value;
+    const email = document.getElementById('email').value;
+
+    if (firstName === "") {
+      showError("First name is required.");
+      return;
+    }
+
+    if (lastName === "") {
+      showError("Last name is required.");
+      return;
+    }
+
+    if (companyName === "") {
+      showError("Company name required.");
+      return;
+    }
+
+    if(email === "") {
+      showError("Email is required.");
+      return;
+    }
+
+    if(!validateEmail(email)) {
+      showError("Invalid email format.");
+    }
+
+    form.submit();
+    
+    function validateEmail(email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    }
+  });
+  
 });
