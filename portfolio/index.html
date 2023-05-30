@@ -95,14 +95,14 @@
     <div class="contact-container">
         <h2>Do you want to get in touch with me? Feel free to reach out to me!</h2>
         <br><br>
-        <form id="myForm">
-        <input type="text" class="font" name="first name" id="first-name" placeholder="First Name" enctype="text/plain">
+        <form action="process_form.php" method="POST">
+        <input type="text" class="font" name="first name" id="first-name" placeholder="First Name" enctype="text/plain" required>
         <br><br>
-        <input type="text" class="font" name="last name" id="last-name" placeholder="Last Name">
+        <input type="text" class="font" name="last name" id="last-name" placeholder="Last Name" required>
         <br><br>
-        <input type="text" class="font" name="company" id="company-name" placeholder="Company Name">
+        <input type="text" class="font" name="company" id="company-name" placeholder="Company Name" required>
         <br><br>
-        <input type="text" class="font" name="email address" id="email" placeholder="Email Address">
+        <input type="text" class="font" name="email address" id="email" placeholder="Email Address" required>
         <br><br><br>
         <button id="button">Submit</button>
       </form>
