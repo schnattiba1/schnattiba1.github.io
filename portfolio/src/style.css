@@ -1,0 +1,350 @@
+body {
+  margin: 0;
+  background-color: #d9d9d9;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  width: 100%;
+  height: 575px;
+  background-color: #2d2d2d;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  word-spacing: 50px;
+  padding: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Bruno Ace', sans-serif;
+  color: white;
+  text-align: right;
+  margin-right: 10px
+}
+
+nav a:hover {
+ opacity: 54%;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../imgs/coding-walpaper.jpeg') no-repeat center center / cover;
+}
+
+.navbar-links.active {
+  display: flex;
+  background-color: #333;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#self-intro-heading {
+  position: absolute;
+  top: 50px;
+  left: 50px; 
+  z-index: 1;
+  color: white;
+  margin-top: 250px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+#self-intro-subheading {
+  position: absolute;
+  top: 50px; 
+  left: 50px; 
+  z-index: 1;
+  color: white;
+  margin-top: 335px;
+}
+
+#about-me {
+  text-align: center;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#about-me h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#about-me img {
+  margin-right: 1185px;
+}
+
+
+.heading {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+
+#about-me-presentation {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -515px;
+}
+
+#projects {
+  text-align: center;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#projects-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects-img img {
+  height: 300px;
+  width: 500px;
+  border-radius: 15%;
+  margin: 0 40px; 
+}
+
+#projects-img img:first-child,
+#projects-img img:last-child {
+  margin: 0;
+}
+
+.project-item {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin: 10px; 
+}
+
+.project-item .image-container {
+  margin-bottom: 10px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.project-item a {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.project-item img:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  height: 15px;
+  width: 15px;
+}
+
+.project-item button {
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.project-item button a {
+  height: 40px;
+  margin-left: 5px;
+}
+
+#skills {
+  text-align: center;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#skills-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  margin-right: 120px;
+  margin-left: 120px;
+}
+
+#contact {
+  text-align: center;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+#contact .font {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+input.font[name="first name"],
+    input.font[name="last name"],
+    input.font[name="company"],
+    input.font[name="email address"] {
+      width: 669px;
+      height: 78px;
+    }
+
+#button {
+  background-color: #008000;
+  font-size: 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  left: 1112px;
+  top: 3911px;
+  width: 320px; 
+  height: 63px; 
+  font-weight: 400;
+}
+
+
+footer {
+  margin-top: 200px;
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  flex-grow: 1;
+}
+
+.img-footer {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  opacity: 54%;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input.font[name="first name"],
+    input.font[name="last name"],
+    input.font[name="company"],
+    input.font[name="email address"] {
+      width: 669px;
+      height: 78px;
+    }
+
+#button {
+  background-color: #008000;
+  font-size: 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  left: 1112px;
+  top: 3911px;
+  width: 320px; 
+  height: 63px; 
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  margin-top: 200px;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  flex-grow: 1;
+}
+
+footer img {
+  height: 90px;
+  width: 90px;
+}
+
+footer img:hover {
+  opacity: 54%;
+}
+
+.footer-logo {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
