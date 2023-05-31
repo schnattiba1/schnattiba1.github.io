@@ -243,7 +243,7 @@ input.font[name="first name"],
     input.font[name="email address"] {
       width: 669px;
       height: 78px;
-    }
+  }
 
 #button {
   background-color: #008000;
@@ -296,7 +296,18 @@ input.font[name="first name"],
     input.font[name="email address"] {
       width: 669px;
       height: 78px;
-    }
+}
+
+textarea.msg-font {
+  width: 669px;
+  height: 300px;
+  resize: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-container h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 
 #button {
   background-color: #008000;

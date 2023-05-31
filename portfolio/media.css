@@ -59,6 +59,12 @@
         height: 50px;
         width: 50px;
     }
+    textarea.msg-font {
+        width: 600px;
+        height: 300px;
+        resize: none;
+        font-family: 'Inter', sans-serif;
+      }
 }
 
 @media (max-width: 1190px) {
@@ -133,6 +139,12 @@
     h2 {
         font-size: 14px;
     }
+    textarea.msg-font {
+        width: 400px;
+        height: 300px;
+        resize: none;
+        font-family: 'Inter', sans-serif;
+    }
 }
 
 @media (max-width: 800px) {
@@ -177,6 +189,12 @@
     }
     .contact-container h2 {
         margin-left: 15px
+    }
+    textarea.msg-font {
+        width: 300px;
+        height: 300px;
+        resize: none;
+        font-family: 'Inter', sans-serif;
     }
   }
   
