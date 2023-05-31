@@ -196,6 +196,13 @@
         resize: none;
         font-family: 'Inter', sans-serif;
     }
+
+    #h2-id {
+        margin-left: 20px;
+    }
+    #id {
+        margin-left: 25px;
+    }
   }
   
   @media (max-width: 699px) {
