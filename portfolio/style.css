@@ -111,6 +111,10 @@ nav::before {
   margin-right: 1185px;
 }
 
+#idx {
+  margin-left: 70px;
+}
+
 
 .heading {
   border-bottom: 1px solid black;
