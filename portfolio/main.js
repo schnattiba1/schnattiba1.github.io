@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarLinks.classList.toggle('active');
   });
   
-  
   var dataHref = document.querySelectorAll('button[data-href]');
 
   for (let i = 0; i < dataHref.length; i++) {
