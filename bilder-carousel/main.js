@@ -1,43 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll(".slide");
 
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${indx * 100}%)`;
+    const slides = document.querySelectorAll('.slide');
+
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${index * 100}%)`;
     });
 
-    let curSlide = 0;
+    // the current slide counter
+    let currSlide = 0;
+    
+    // selecting the next slide button 
+    const nextSlide = document.querySelector('.btn-next');
 
-    const nextSlide = document.querySelector(".btn-next");
+    // selecting the previous slide button 
+    const prevSlide = document.querySelector('.btn-prev');
 
-    nextSlide.addEventListener("click", function() {
-        curSlide++;
+    // maximum number of slides
+    const maxSlide = slides.length - 1;
 
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+    nextSlide.addEventListener('click', function() {
+       
+        currSlide++;
+
+        if (currSlide > maxSlide) {
+            currSlide = 0;
+        }
+
+    
+        slides.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - currSlide)}%)`;
         });
     });
 
-    let maxSlide = slides.length - 1;
+    prevSlide.addEventListener('click', function() {
+        currSlide--;
 
-    nextSlide.addEventListener("click", function() {
-        if (curSlide === maxSlide) {
-            curSlide = 0;
-        } else {
-            curSlide++;
-        }
-    });
-
-    const prevSlide = document.querySelector(".btn-prev");
-
-    prevSlide.addEventListener("click", function() {
-        if (curSlide === 0) {
-            curSlide = maxSlide;
-        } else {
-            curSlide--;
+        if (currSlide < 0) {
+            currSlide = maxSlide;
         }
 
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        slides.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - currSlide)}%)`;
         });
     });
 
