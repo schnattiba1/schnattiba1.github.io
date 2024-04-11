@@ -1,10 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // selects all the class 'slide'
     const slides = document.querySelectorAll('.slide');
 
     slides.forEach((slide, index) => {
+        slide.style.transition = 'none';
         slide.style.transform = `translateX(${index * 100}%)`;
     });
+
+    // enabling transitions after the page loaded.
+    setTimeout(() => {
+        slides.forEach(slide => {
+            slide.style.transition = '';
+        });
+    }, 100);
 
     // the current slide counter
     let currSlide = 0;
@@ -44,4 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const isPageRefreshed = sessionStorage.getItem('pageLoadTime');
+
+    // If the page is refreshed, disable transition
+    if (isPageRefreshed) {
+        slides.forEach(slide => {
+            slide.style.transition = 'none';
+        });
+    }
 });
