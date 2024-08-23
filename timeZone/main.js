@@ -418,7 +418,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 let resultItem = document.createElement('li');
                 resultItem.style.listStyle = 'none';
                 resultItem.style.marginBottom = '20px';
-                //resultItem.style.visibility = 'hidden';
                 resultItem.style.fontSize = '35px;';
                 resultItem.textContent = `${result.name}: ${result.time}`;
                 searchResult.appendChild(resultItem);
