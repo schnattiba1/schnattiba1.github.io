@@ -22,4 +22,7 @@
         width: 190px;
         margin-left: 40px;
     }
+    h2 {
+        font-size: 15px;
+    }
 }
