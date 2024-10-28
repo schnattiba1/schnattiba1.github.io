@@ -1,0 +1,181 @@
+/* Define custom fonts */
+@font-face {
+    font-family: SonicFont;
+    src: url(./NiseSegaSonic.TTF);
+}
+
+body {
+    text-align: center;
+    font-size: 26px;
+    background-image: url('https://sonic.sega.jp/SonicChannel/enjoy/image/wallpaper_235_sonic_26_pc.png');
+    background-size: 100%;
+    font-family: SonicFont;
+}
+
+h3 {
+    color: #0a0d11;
+}
+
+a {
+    color: rgb(101, 222, 101);
+    text-decoration: none;
+}
+
+#sonic-logo {
+    height: 70px;
+    position: relative;
+    left: 850px;
+    bottom: 105px;
+}
+
+#sonic-dance {
+    height: 150px;
+    float: left;
+    margin-left: 105px;
+}
+
+table, td {
+    border: 1px solid;
+}
+
+#table-of-sonic-char {
+    float: left;
+    font-size: 20px;
+}
+
+.sonic-gif {
+    height: 150px;
+}
+
+.sonic {
+    color: #003366;
+    margin-top: 150px;
+    border-style: inset;
+}
+
+.sonic #sonic-gif {
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.sonic #sonic-img {
+    /*margin-top: 100px;*/
+    height: 450px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+.tails {
+    color: #CC9900;
+    border-style: inset;
+}
+
+.tails img {
+    height: 450px;
+}
+
+.tails #tails-gif {
+    height: 250px;
+}
+
+.knuckles {
+    color: #CC0000;
+    border-style: inset;
+}
+
+.knuckles img {
+    height: 450px;
+}
+
+.knuckles #knuckles-gif {
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.silver {
+    color: #e0dddd;
+    border-style: inset;
+}
+
+.silver img {
+    height: 450px;
+}
+
+.silver #silver-gif {
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.shadow {
+    color: #0a0d11;
+}
+
+.shadow img {
+    height: 450px;
+}
+
+.shadow #shadow-gif {
+    height: 150px;
+}
+
+.dr-eggman {
+    color: #CC0000;
+    border-style: inset;
+}
+
+.dr-eggman img {
+    height: 450px;
+}
+
+.dr-eggman #dr-eggman-gif {
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.amy {
+    color: #FF33CC;
+    border-style: inset;
+}
+
+.amy img {
+    height: 450px;
+}
+
+.amy #amy-gif {
+    height: 290px;
+    margin-bottom: 40px;
+}
+
+.meme {
+    display: inline;
+    border-style: inset;
+}
+
+.meme img {
+    height: 350px;
+    width: 333px;
+}
+
+.meme #sonic-in-game-meme {
+    float: left;
+}
+
+.meme #sonic-meme {
+    float: right;
+}
+
+/* making the imgs to stop hovering */
+.meme img:hover {
+    transform: none;
+    opacity: 1;
+}
