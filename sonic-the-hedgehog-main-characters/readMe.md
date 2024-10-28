@@ -1,5 +1,5 @@
 ## This website is only designed for desktops, not for media queries.
-## In the near future, I will be designing this website for media queries.
+## In the near future, I will be designing this website for media queries and might modify or erase the walpaper from this website.
 
 # The main characters in Sonic The Hedgehog
 ### In this website, I designed that lists the main characters in Sonic The Hedgehog.
