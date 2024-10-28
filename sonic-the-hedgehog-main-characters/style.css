@@ -7,7 +7,7 @@
 body {
     text-align: center;
     font-size: 26px;
-    background-image: url('https://sonic.sega.jp/SonicChannel/enjoy/image/wallpaper_235_sonic_26_pc.png');
+    background-image: url('./sonic-walpaper.png');
     background-size: 100%;
     font-family: SonicFont;
 }
