@@ -28,12 +28,6 @@ a {
     bottom: 105px;
 }
 
-/*#sonic-dance {
-    height: 150px;
-    margin-left: 105px;
-    float: left;
-}*/
-
 #sonic-dance {
     height: 150px;
     display: block;      /* Block display to keep it separate from the grid */
