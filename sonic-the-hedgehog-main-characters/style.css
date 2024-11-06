@@ -28,19 +28,43 @@ a {
     bottom: 105px;
 }
 
+/*#sonic-dance {
+    height: 150px;
+    margin-left: 105px;
+    float: left;
+}*/
+
 #sonic-dance {
     height: 150px;
-    float: left;
-    margin-left: 105px;
+    display: block;      /* Block display to keep it separate from the grid */
+    margin: 0 auto 20px; /* Center it horizontally and add spacing below */
 }
+
+.grid-container {  
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%; /* Adjust width to fit the layout and center the grid */
+    margin: 0 auto; /* Centering the grid */
+    color: #FFF;
+}
+
+.grid-container > div {
+    background-color: #003399;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px
+}
+
 
 table, td {
     border: 1px solid;
 }
 
 #table-of-sonic-char {
-    float: left;
-    font-size: 20px;
+    margin-top: 90px;
+    font-size: 36px;
+    color:#0033FF;
 }
 
 .sonic-gif {
