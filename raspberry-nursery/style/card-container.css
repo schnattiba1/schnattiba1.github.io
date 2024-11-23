@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* The container for both cards and imgs */
+.container {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    flex-wrap: wrap;
+}
+
+/* For the card */
+.card {
+    background-color: #fff;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* For the img */
+.card-image {
+    height: 270px;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0; /* Border radius for the image */
+}
+
+/* For the card image */
+.raspberry-1 {
+    background-image: url('../imgs/kwanza-raspberry.jpg');
+}
+
+.raspberry-2 {
+    background-image: url('../imgs/black-raspberry.jpg');
+}
+
+.raspberry-3 {
+    background-image: url('../imgs/double-gold-raspberry.jpg');
+}
+
+.raspberry-4 {
+    background-image: url('../imgs/raspberry-seeds.jpg')
+}
+
+/* Creating space for h3 */
+.card h3 {
+    padding: 10px;
+}
+
+/* Designing the a tag */
+.card a {
+    background-color: #000;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Erases the underlinek decoration */
+    margin: -1px 50px;
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+
+/* Hover for the a tag*/
+.card a:hover {
+    opacity: 0.5;
+    transition: all 1s ease; /* Animation for the hover function */
+}

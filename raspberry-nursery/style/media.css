@@ -1,0 +1,126 @@
+@media (max-width: 1214px) {
+    .our-location img {
+        height: auto;
+        width: 450px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -1000%;
+        z-index: 100; /* Controls stacking order of overlapping elements on a page */
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: flex;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .life-time-of-a-raspberry {
+        text-align: center;
+    }
+
+    .life-time-of-a-raspberry img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .life-time-of-a-raspberry-fact h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .fun-facts img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .who-are-we img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .our-location img {
+        height: 140px;
+        width: 250px;
+    }
+    
+    .raspberry-wrapper img {
+        width: 45%;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 349px) {
+    .who-are-we img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .our-location img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .raspberry-wrapper img {
+        width: 100%;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 248px) {
+    .fun-facts img {
+        height: 90px;
+        width: 100px;
+    }
+
+    .who-are-we img {
+        height: 90px;
+        width: 100px;
+    }
+
+    .our-location img {
+        height: 90px;
+        width: 100px;
+    }
+    
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
