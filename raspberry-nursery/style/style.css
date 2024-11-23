@@ -1,0 +1,221 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    --color1: #fff;
+    --color2: #181818;
+    background-color: #333333; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    /*background-color: var(--color2);*/
+    padding: 12px 12px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: center;
+    font-size: 20px;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu, .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    right: 20px;
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+.logo img {
+    width: 40px;
+}
+
+header {
+    /*background-color: #E30B5C;*/
+    background-image: url('../imgs/background-raspberries.avif');
+    padding: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+header nav {
+     font-size: 20px;
+     margin-top: 50px;
+}
+
+/* Links */
+header nav a {
+    display: inline;
+    padding: 0 10px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+header nav a:hover {
+    opacity: 0.5;
+}
+
+section {
+    margin-top: 80px;
+    color: #fff;
+}
+
+section h1 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.life-time-of-a-raspberry {
+    margin-top: 50px;
+}
+
+.life-time-of-a-raspberry h2 {
+    font-size: 25px;
+}
+
+.life-time-of-a-raspberry img {
+    margin-top: 50px;
+}
+
+.life-time-of-a-raspberry h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.fun-facts img {
+    margin-top: 40px;
+    height: 400px;
+    width: 600px;
+}
+
+.fun-facts h2 {
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+footer {
+    margin-top: 90px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer p {
+    font-size: 23px;
+}
+
+footer img {
+    display: inline;
+    column-count: 2;
+}
+
+.socials {
+    display: block;
+    column-count: 2; /* Divide the content into 2 columns */
+    column-gap: 40px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.facebook-logo:hover {
+    cursor: pointer;
+    transition: .2s; /* Animations */
+    transform: scale(1.5);
+}
+
+.instagram-logo:hover {
+    cursor: pointer;
+    transition: .2s; /* Animations */
+    transform: scale(1.5);
+}
+
+main article {
+    margin-top: 40px;
+    color: white;
+}
+
+.who-are-we img {
+    margin-top: 40px;
+    height: 400px;
+    width: 700px;
+}
+
+.who-are-we {
+    line-height: 40px;
+}
+
+.our-location h2 {
+    line-height: 40px;
+}
