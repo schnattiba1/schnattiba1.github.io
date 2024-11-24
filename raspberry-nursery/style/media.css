@@ -86,6 +86,10 @@
         width: 40px;
         height: 40px;
     }
+
+    footer {
+        margin-top: 290px
+    }
 }
 
 @media (max-width: 349px) {
