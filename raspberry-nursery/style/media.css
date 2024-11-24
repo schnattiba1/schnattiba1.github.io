@@ -81,6 +81,11 @@
         width: 100px;
         height: 100px;
     }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 349px) {
